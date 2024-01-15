@@ -29,7 +29,7 @@
 .contact__card-icon {
   font-size: 2rem;
   /* color: var(--text-color); */
-  color: red;
+  color: orangered;
   margin-bottom: var(--mb-0-25);
 }
 
