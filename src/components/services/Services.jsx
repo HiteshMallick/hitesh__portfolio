@@ -43,32 +43,32 @@ const Services = () => {
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
+                    I develop the best user interface.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">web page development</p>
+                  <p className="services__modal-info">Responsive application.</p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I create ux element interactions.
+                    Fullfill client requirements and demands.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I edit videos for client and content.
+                  Provide ready to use application.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Design</p>
+                  <p className="services__modal-info">I create ux element interactions.</p>
                 </li>
               </ul>
             </div>
@@ -94,44 +94,36 @@ const Services = () => {
 
               <h3 className="services__modal-title">Ui/Ux Designer</h3>
               <p className="services__modal-description">
-                I am creating user-friendly responsive websites by using React,
-                Html, Css and JavaScript.Provide quality work to clients.Also, I
-                have personal experience of mine in video's editing,I'm edit
-                video's for content creators by using tools Daivince Resolve 18,
-                Kinemaster.
+                I have exprience and knowledge to understand UX/UI designe's and shape into a user-friendly digial experiences.
               </p>
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
+                    I create amazing designe for applications.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">web page development</p>
+                  <p className="services__modal-info">Product / web-page designs.</p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I create ux element interactions.
+                    Give users the best UI/UX interface interaction's.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I edit videos for client and content.
+                    Always up-to-date with new ideas.
                   </p>
                 </li>
 
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Design</p>
-                </li>
               </ul>
             </div>
           </div>
@@ -156,44 +148,37 @@ const Services = () => {
 
               <h3 className="services__modal-title">video Editor</h3>
               <p className="services__modal-description">
-                I am creating user-friendly responsive websites by using React,
-                Html, Css and JavaScript.Provide quality work to clients.Also, I
-                have personal experience of mine in video's editing,I'm edit
-                video's for content creators by using tools Daivince Resolve 18,
-                Kinemaster.
+                I am a part-time video editior with self-experience of 1yr
+                and provide best product to client.
               </p>
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
+                  Use Davinci Resolve tool to create the magic.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">web page development</p>
+                  <p className="services__modal-info">listen what client need in their video.</p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I create ux element interactions.
+                  Provide the best product to clients.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I edit videos for client and content.
+                    I edit videos for clients and content-creators.
                   </p>
                 </li>
 
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Design</p>
-                </li>
               </ul>
             </div>
           </div>

@@ -17,8 +17,8 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Frontend developer, I create web pages with UI/UX user interface, I
-            have 1 year of experience and clients are happy with my work.
+            Dedicated Web Developer with a strong foundation in Front-End development & basic knowledge of back-end passsion for creating engaging and user-friendly applications. Good command on
+            Html5, Css3, JavaScript and React-js. Committed to continuous learning and staying up-to-date with the latest web-development trends. 
           </p>
 
           <a download="" href={""} className="button button--flex">
