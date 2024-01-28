@@ -1,19 +1,37 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
+
+  const data = {name:"", email:"", message:""};
+  const[inputData, setInputData] = useState(data);
+  const[flag, setFlag] = useState(false)
+
+  useEffect(()=>{
+    console.log('Wait!')
+  },[flag])
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_f83e3ps', 'template_hb8xbo4', form.current, 'ni0pz2PMbfqHmO-19')
+    if(!inputData.name || !inputData.email || !inputData.message){
+      alert('All fields are Mandatory')
+    }else{
+      emailjs.sendForm('service_f83e3ps', 'template_hb8xbo4', form.current, 'ni0pz2PMbfqHmO-19')
 
-    e.target.reset()
-
+      e.target.reset()
+      alert(`Hello ${inputData.name}, your message received successfully pls wait for his response`)
+      setFlag(true)
+    }
   };
+
+  function handleData(e){
+    setInputData({...inputData,[e.target.name]:e.target.value})
+  }
+
 
   return (
     <section className="contact section" id="contact">
@@ -80,6 +98,8 @@ const Contact = () => {
                 name="name"
                 className="contact__form-input"
                 placeholder="Insert your name"
+                value={inputData.name}
+                onChange={handleData}
               />
             </div>
 
@@ -90,6 +110,8 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Insert your email"
+                value={inputData.email}
+                onChange={handleData}
               />
             </div>
 
@@ -101,10 +123,12 @@ const Contact = () => {
                 rows="10"
                 className="contact__form-input"
                 placeholder="Message"
+                value={inputData.message}
+                onChange={handleData}
               ></textarea>
             </div>
 
-            <button  className="button button--flex">
+            <button  className="button button--flex" on>
               Send Message
               <svg
                 class="button__icon"

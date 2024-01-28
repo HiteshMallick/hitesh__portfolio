@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets//hiteshimg.jpg";
-// import CV from '';
+import CV from '../../assets/Hitesh_nResume.pdf';
 import Info from "./Info";
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
             Html5, Css3, JavaScript and React-js. Committed to continuous learning and staying up-to-date with the latest web-development trends. 
           </p>
 
-          <a download="" href={""} className="button button--flex">
+          <a download="" href={CV} className="button button--flex">
             Download CV
             <svg
               class="button__icon"
