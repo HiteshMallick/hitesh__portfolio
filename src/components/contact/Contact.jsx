@@ -1,37 +1,42 @@
-import React, { useEffect, useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
+  const data = { name: "", email: "", message: "" };
+  const [inputData, setInputData] = useState(data);
+  const [flag, setFlag] = useState(false);
 
-  const data = {name:"", email:"", message:""};
-  const[inputData, setInputData] = useState(data);
-  const[flag, setFlag] = useState(false)
-
-  useEffect(()=>{
-    console.log('Wait!')
-  },[flag])
+  useEffect(() => {
+    console.log("Wait!");
+  }, [flag]);
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if(!inputData.name || !inputData.email || !inputData.message){
-      alert('All fields are Mandatory')
-    }else{
-      emailjs.sendForm('service_f83e3ps', 'template_hb8xbo4', form.current, 'ni0pz2PMbfqHmO-19')
+    if (!inputData.name || !inputData.email || !inputData.message) {
+      alert("All fields are Mandatory");
+    } else {
+      emailjs.sendForm(
+        "service_f83e3ps",
+        "template_hb8xbo4",
+        form.current,
+        "ni0pz2PMbfqHmO-19"
+      );
 
-      e.target.reset()
-      alert(`Hello ${inputData.name}, your message received successfully pls wait for his response`)
-      setFlag(true)
+      e.target.reset();
+      alert(
+        `Hello ${inputData.name}, your message received successfully pls wait for his response`
+      );
+      setFlag(true);
     }
   };
 
-  function handleData(e){
-    setInputData({...inputData,[e.target.name]:e.target.value})
+  function handleData(e) {
+    setInputData({ ...inputData, [e.target.name]: e.target.value });
   }
-
 
   return (
     <section className="contact section" id="contact">
@@ -128,7 +133,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button  className="button button--flex" on>
+            <button className="button button--flex" on>
               Send Message
               <svg
                 class="button__icon"
